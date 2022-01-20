@@ -23,7 +23,7 @@ int main(void){
     int heads = 0; //initial heads =  0
     int tails = 0; //initial tails = 0
     srand(time(NULL));
-    
+
     for(n = 1; n <= 1000; n++){
         printf("%d\n", flip());
 
