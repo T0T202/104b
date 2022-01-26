@@ -45,4 +45,4 @@ plt.legend()
 plt.show()
 
 #Discuss
-#Based on what we get from the graph, both new methods have better accuracy than the one we did in assignment 1, the third method gives the best approximation compared to the others. But when x is about 0.8, the solutions for the second method and the third method seems to overlap each other
+print('Based on what we get from the graph, both new methods have better accuracy than the one we did in assignment 1, the third method gives the best approximation compared to the others. But when x is about 0.8, the solutions for the second method and the third method seems to overlap each other')

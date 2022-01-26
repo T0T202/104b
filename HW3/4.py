@@ -7,7 +7,7 @@ print("Enter the dimension of the matrix: ")
 n = int(input())
 #Create matrix
 matrix = np.zeros(shape=(n,n))
-print("Enter the elements of the matrix by row: ")
+print("Enter the elements of the matrix by column: ")
 #Enter matrix
 for i in range(0, n):
     for j in range(0, n):
