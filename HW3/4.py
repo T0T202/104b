@@ -7,13 +7,15 @@ print("Enter the dimension of the matrix: ")
 n = int(input())
 #Create matrix
 matrix = np.zeros(shape=(n,n))
+print("Enter the elements of the matrix by row: ")
 #Enter matrix
-for j in range(0, n):
-    for i in range(0, n):
-        matrix[i][j] = float(input()) #Fill the matrix with each column (same j)
+for i in range(0, n):
+    for j in range(0, n):
+        matrix[i][j] = float(input()) #Fill the matrix with row (same i)
 #Create vector with the same dimension
 v = np.zeros(shape=(n,1))
 #Enter elements of the vector
+print("Enter the elements of the vector: ")
 for i in range(0, n):
     v[i] = float(input())
 
@@ -30,7 +32,7 @@ for m in range(0, m):
     for i in range(0, n):
         for j in range(0, n):
             #Multiply rows of the matrix with column of the vector
-            sum_row = sum_row + matrix[j][i] * v[j]
+            sum_row = sum_row + matrix[i][j] * v[j]
         result[i] = sum_row #Adding the result into the new matrix
         sum_row = 0 #Set the sum of a row back to 0, and begin the calculation again
         sum = sum + result[i]**2 #Get the sum of all the elements in the result array
